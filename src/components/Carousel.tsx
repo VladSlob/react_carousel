@@ -25,8 +25,7 @@ const Carousel: React.FC<CarouselProps> = ({
     setPosition(prevPos => {
       const newPosition = prevPos + step;
 
-      if (infinite) {
-        return newPosition % images.length;
+
       }
 
       return Math.min(newPosition, maxPosition);
